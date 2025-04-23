@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Walkie Talkie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📡 Digital Walkie Talkie</h1>
+    <div class="inputs">
+      <input id="nickname" type="text" placeholder="Your Nickname" />
+      <input id="channel" type="text" placeholder="Channel Name" />
+    </div>
+    <div class="buttons">
+      <button id="joinBtn">Join Channel</button>
+      <button id="leaveBtn" disabled>Leave Channel</button>
+    </div>
+    <div id="talkArea">
+      <button id="talkBtn" disabled>🎙️ Hold to Talk</button>
+    </div>
+    <div id="status"></div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
